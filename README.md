@@ -12,6 +12,7 @@ CommuniTree is an open-source alternative to Linktree, built with modern web tec
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![Prisma](https://img.shields.io/badge/Prisma-Latest-blue)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-Latest-black)
+![Clerk](https://img.shields.io/badge/Clerk-Latest-purple)
 
 ## ✨ Features
 
@@ -20,6 +21,7 @@ CommuniTree is an open-source alternative to Linktree, built with modern web tec
 - **Type-Safe**: Full TypeScript support throughout the application
 - **Database Integration**: PostgreSQL hosted on neon.tech for scalable, reliable data storage
 - **ORM**: Prisma for type-safe database operations
+- **Authentication**: Secure authentication powered by Clerk
 - **Customizable**: Extensive theming and styling options
 - **Responsive**: Works seamlessly across all devices and screen sizes
 
@@ -45,9 +47,14 @@ pnpm install
 cp .env.example .env
 ```
 
-4. Configure your database URL in `.env`:
+4. Configure your environment variables in `.env`:
 ```env
+# Database
 DATABASE_URL="postgresql://..."
+
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 ```
 
 5. Run database migrations:
@@ -70,6 +77,7 @@ pnpm dev
 - **UI Components**: shadcn/ui
 - **Database**: PostgreSQL (neon.tech)
 - **ORM**: Prisma
+- **Authentication**: Clerk
 - **Styling**: Tailwind CSS
 - **Type Safety**: TypeScript
 
@@ -93,9 +101,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Report Bug](https://github.com/yourusername/communitree/issues)
-- [Request Feature](https://github.com/yourusername/communitree/issues)
-- [Project Homepage](https://github.com/yourusername/communitree)
+- [Report Bug](https://github.com/JDamianCabello/communitree/issues)
+- [Request Feature](https://github.com/JDamianCabello/communitree/issues)
+- [Project Homepage](https://github.com/JDamianCabello/communitree)
 
 ---
 
@@ -112,8 +120,9 @@ CommuniTree es una alternativa de código abierto a Linktree, construida con tec
 - **Tipado Seguro**: Soporte completo de TypeScript en toda la aplicación
 - **Integración de Base de Datos**: PostgreSQL alojado en neon.tech para almacenamiento de datos escalable y confiable
 - **ORM**: Prisma para operaciones de base de datos con tipado seguro
+- **Autenticación**: Autenticación segura proporcionada por Clerk
 - **Personalizable**: Amplias opciones de temas y estilos
-- **Responsivo**: Funciona perfectamente en todos los dispositivos y tamaños de pantalla
+- **Responsivo**: Funciona perfectamente en todos los dispositivos y tamaños
 
 ## 🚀 Comenzando
 
@@ -137,9 +146,14 @@ pnpm install
 cp .env.example .env
 ```
 
-4. Configura la URL de tu base de datos en `.env`:
+4. Configura las variables de entorno en `.env`:
 ```env
+# Base de datos
 DATABASE_URL="postgresql://..."
+
+# Autenticación Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 ```
 
 5. Ejecuta las migraciones de la base de datos:
@@ -162,6 +176,7 @@ pnpm dev
 - **Componentes UI**: shadcn/ui
 - **Base de Datos**: PostgreSQL (neon.tech)
 - **ORM**: Prisma
+- **Autenticación**: Clerk
 - **Estilos**: Tailwind CSS
 - **Seguridad de Tipos**: TypeScript
 
@@ -185,9 +200,9 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## 🔗 Enlaces
 
-- [Reportar Bug](https://github.com/yourusername/communitree/issues)
-- [Solicitar Funcionalidad](https://github.com/yourusername/communitree/issues)
-- [Página del Proyecto](https://github.com/yourusername/communitree)
+- [Reportar Bug](https://github.com/JDamianCabello/communitree/issues)
+- [Solicitar Funcionalidad](https://github.com/JDamianCabello/communitree/issues)
+- [Página del Proyecto](https://github.com/JDamianCabello/communitree)
 
 ---
 
