@@ -27,7 +27,7 @@ CommuniTree is an open-source alternative to Linktree, built with modern web tec
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/communitree.git
+git clone https://github.com/JDamianCabello/communitree.git
 cd communitree
 ```
 
@@ -119,7 +119,7 @@ CommuniTree es una alternativa de código abierto a Linktree, construida con tec
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/yourusername/communitree.git
+git clone https://github.com/JDamianCabello/communitree.git
 cd communitree
 ```
 
