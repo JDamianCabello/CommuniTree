@@ -1,10 +1,11 @@
 "use client"
 import { TreePalm } from "lucide-react";
-import { LinkProfile } from "./components";
+import { HandlerSteps, LinkProfile } from "./components";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 import { Link, User } from "@prisma/client";
 import { LoaderProfile } from "@/components/Shared";
+import { StepConfigUserProvider } from "@/contexts";
 
 export default function HomePage() {
   const {user} = useUser();
@@ -33,7 +34,11 @@ export default function HomePage() {
   }
 
   if(isFirstTime){
-    return <p>PRIMERA VISITA</p>
+    return (
+      <StepConfigUserProvider>
+        <HandlerSteps onReload={setReload} />
+      </StepConfigUserProvider>
+    );
   }
 
   return (
