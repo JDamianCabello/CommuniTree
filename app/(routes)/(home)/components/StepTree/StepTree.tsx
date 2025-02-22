@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export function StepTree() {
   const { setInfoUser, nextStep, infoUser} = useStepConfig();
-  const [selected, setSelected] = useState<string>("");
 
 
   const sortedData = [...infoUser.platforms || []].sort((a, b) => 
