@@ -2,7 +2,7 @@ import { createContext, useState } from "react"
 import { StepConfigUserContextType, StepConfigUserProviderProps } from "./StepConfigUser.types"
 
 export const  StepConfigUserContext = createContext<StepConfigUserContextType>({
-  step: 1,
+  step: 0,
   setStep: () => {},
   infoUser: {
     typeUser: "",

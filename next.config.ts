@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
         hostname: "ebrflv1h4e.ufs.sh",
         port: "",
         pathname: "/f/**"
+      },
+      {
+        protocol: "https",
+        hostname: "utfs.io",
+        port: "",
+        pathname: "/f/**"
       }
     ],
     dangerouslyAllowSVG: true,

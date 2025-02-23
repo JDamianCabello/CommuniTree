@@ -1,6 +1,7 @@
 
 import { AdminSidebar } from "@/components/Shared"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { Toaster } from "@/components/ui/toaster"
 
 
 export default function HomeLayout({ children }: {children : React.ReactNode}) {
@@ -12,6 +13,7 @@ export default function HomeLayout({ children }: {children : React.ReactNode}) {
           <SidebarTrigger />
         </div>
         {children}
+        <Toaster/>
       </main>
     </SidebarProvider>
   )

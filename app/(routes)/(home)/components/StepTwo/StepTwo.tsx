@@ -39,9 +39,9 @@ export function StepTwo() {
 
   return(
     <div>      
-      <h2 className="text-center font-semibold text-2xl">¿En que plataformas estas?</h2>
+      <h2 className="text-center font-semibold text-2xl">¿Qué plataformas utilizas?</h2>
       <p className="text-center">
-        Selecciona todas las que utilices.
+        Indica a otros usuarios en que redes pueden encontrarte
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 mt-4">

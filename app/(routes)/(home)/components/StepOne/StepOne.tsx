@@ -26,10 +26,10 @@ export function StepOne() {
   return (
     <div>
       <h2 className="text-center font-semibold text-2xl">
-        Cuentanos sobre ti
+      ¿Qué sueles publicar por redes
       </h2>
       <p className="text-center">
-        Con estas preguntas personalizaremos tu experiencia inical
+        Selecciona el tipo de contenido que haces en tus plataformas
       </p>
 
       <div className="grid grid-cols-1 gap-2 mt-4">

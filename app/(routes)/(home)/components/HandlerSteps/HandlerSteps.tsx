@@ -14,6 +14,9 @@ import { Progress } from "@/components/ui/progress";
 import { StepOne } from "../StepOne";
 import { StepTwo } from "../StepTwo";
 import { StepTree } from "../StepTree";
+import { StepFour } from "../StepFour";
+import { InitialStep } from "../InitialStep";
+import { Summary } from "../Summary";
 
 export function HandlerSteps(props: HandlerStepsProps) {
     const { onReload } = props;
@@ -33,23 +36,29 @@ export function HandlerSteps(props: HandlerStepsProps) {
         <AlertDialogContent>
             <AlertDialogHeader>
             <AlertDialogTitle className="mb-3">
-                { step > 1 && step < 5 && (
+            { step > 0 && step < 5 && (
                     <Button variant={"outline"} className="mr-2" onClick={prevStep}>
                         <ArrowLeft />Atrás
                     </Button>
-                )}
-                <div className="mb-2 text-center">
+            )}
+            { step > 0 && step < 5 && (
+                <div>
+                    <div className="mb-2 text-center">
                     Paso { step } de { totalSteps }
+                    </div>
+                    <Progress value={progressValue} />
                 </div>
-                <Progress value={progressValue} />
+
+            )}
             </AlertDialogTitle>
             <AlertDialogDescription asChild>
                 <div>
+                    { step === 0 && <InitialStep />}
                     { step === 1 && <StepOne />}
                     { step === 2 && <StepTwo />}
                     { step === 3 && <StepTree />}
-                    { step === 4 && (<p>Paso cuatro</p>)}
-                    { step === 5 && (<p>Paso cinco</p>)}
+                    { step === 4 && <StepFour />}
+                    { step === 5 && <Summary onReload={onCloseDialog}/>}
                 </div>
             </AlertDialogDescription>
             </AlertDialogHeader>
